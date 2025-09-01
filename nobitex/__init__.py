@@ -3,6 +3,6 @@
 # using importlib.metadata
 import importlib.metadata
 
-__version__ = importlib.metadata.version(__name__)
+__version__ = importlib.metadata.version("nobitex-python")
 
 __all__ = ["__version__"]
