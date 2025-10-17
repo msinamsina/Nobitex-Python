@@ -35,4 +35,5 @@ repos:
     hooks:
     -   id: mypy
         files: ^nobitex/
-        additional_dependencies: [types-tqdm]
+        # read mypy.ini for configuration
+        additional_dependencies: [pydantic, types-PyYAML]
