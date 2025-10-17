@@ -10,7 +10,7 @@ class OrderBookEntry(BaseModel):
 
     @model_validator(mode="before")
     @classmethod
-    def parse_list(cls, data: Any):
+    def parse_list(cls, data: Any) -> Any:
         if isinstance(data, (list, tuple)) and len(data) == 2:
             return {"price": data[0], "quantity": data[1]}
         return data
