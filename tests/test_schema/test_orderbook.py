@@ -7,7 +7,6 @@ from nobitex.schema.orderbook import OrderBook, OrderBookEntry, all_order_books_
 
 
 class TestOrderBookEntry:
-
     @mark.parametrize(
         "input_data, expected_price, expected_quantity",
         [

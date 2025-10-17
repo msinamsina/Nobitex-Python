@@ -8,7 +8,7 @@ class OrderBookEntry(BaseModel):
     price: Decimal = Field(..., description="The price of the order")
     quantity: Decimal = Field(..., description="The quantity of the order")
 
-    @model_validator(mode="before")
+    @model_validator(mode="before")  # type: ignore[misc]
     @classmethod
     def parse_list(cls, data: Any) -> Any:
         if isinstance(data, (list, tuple)) and len(data) == 2:
