@@ -30,6 +30,7 @@ dependencies = [
     "pydantic",
     "httpx",
     "nbval>=0.11.0",
+    "pre-commit>=4.3.0",
 ]
 
 [project.urls]

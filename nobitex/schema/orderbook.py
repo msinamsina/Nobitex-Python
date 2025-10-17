@@ -1,6 +1,7 @@
-from pydantic import BaseModel, Field, model_validator, TypeAdapter
-from typing import List, Any
 from decimal import Decimal
+from typing import Any, List
+
+from pydantic import BaseModel, Field, TypeAdapter, model_validator
 
 
 class OrderBookEntry(BaseModel):

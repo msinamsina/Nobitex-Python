@@ -1,7 +1,9 @@
-from nobitex.schema.orderbook import OrderBookEntry, OrderBook, all_order_books_T
 from decimal import Decimal
-from pytest import mark
+
 from pydantic import ValidationError
+from pytest import mark
+
+from nobitex.schema.orderbook import OrderBook, OrderBookEntry, all_order_books_T
 
 
 class TestOrderBookEntry:
